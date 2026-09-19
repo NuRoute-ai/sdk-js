@@ -1,6 +1,11 @@
 # NuRoute JavaScript SDK
 
-The official JavaScript / TypeScript SDK for [NuRoute](https://github.com/NuRoute-ai/sdk-js) — a provider-agnostic LLM gateway that lets you route, monitor, and control inference requests across OpenAI, Anthropic, Google, and more.
+[![npm version](https://img.shields.io/npm/v/@aicp/sdk)](https://www.npmjs.com/package/@aicp/sdk)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+The official JavaScript / TypeScript SDK for [NuRoute](https://nuroute.ai) — a provider-agnostic LLM gateway that lets you route, monitor, and control inference requests across OpenAI, Anthropic, Google, and more.
+
+Point `model: 'auto'` at any request and NuRoute predicts the cheapest model that can still answer it well, so you stop paying frontier prices for prompts a cheaper model would handle just as well.
 
 ## Installation
 
@@ -56,6 +61,8 @@ client.setApiKey(token);
 ## Documentation
 
 Full SDK documentation: [nuroute.ai/docs](https://nuroute.ai/docs)
+
+How routing decisions are made: [nuroute.ai/docs/concepts/routing-performance](https://nuroute.ai/docs/concepts/routing-performance)
 
 ## License
 
